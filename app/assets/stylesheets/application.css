@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    background-color: DarkSalmon;
+}
+
+ #horizontal-scroll {
+ width: 800px;
+ height: 600px;
+ background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/130527/bg-repeat.png);
+ -webkit-animation: backgroundScroll 20s linear infinite;
+ animation: backgroundScroll 20s linear infinite;
+ }
+
+ @-webkit-keyframes backgroundScroll {
+ from {background-position: 0 0;}
+ to {background-position: -400px 0;}
+ }
+
+ @keyframes backgroundScroll {
+ from {background-position: 0 0;}
+ to {background-position: -400px 0;}
+ }
+
+ .center {
+
+px;
+   margin: -70px 0 0 -120px;
+   position: absolute;
+   top: 40%;
+   left: 35%;
+
+ }
