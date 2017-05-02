@@ -1,14 +1,24 @@
-
 <div class="center">
-<h2>onions</h2>
+  <div class="animated rubberBand">
+    <div id="horizontal-scroll">
+    </div>
+  </div>
+</div>
+
+    <div class="logocenter">
+      <div class="animated rubberBand">
+        <div class="logoset">
+          <img src="http://res.cloudinary.com/ds0wwrj3f/image/upload/v1493665351/mystory_v4kle9.png" class="logo">
+        </div>
 
 
-
+<div class="georgiafont">
+    <div class="loginposition">
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div class="field" >
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true %>
-  </div>
+
 
   <div class="field">
     <%= f.label :password %><br />
@@ -28,4 +38,5 @@
 <% end %>
 
 <%= render "users/shared/links" %>
-</div>
+    </div>
+      </div>

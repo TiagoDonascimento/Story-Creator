@@ -1,13 +1,25 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Root from './root';
+import { browserHistory } from 'react-router';
+
+
+
+
+
+let reactAppRender = (element) => {
+  ReactDOM.render(
+    <Root browserHistory={browserHistory}/>,
+    element
+  );
+};
+
+
 
 $(function() {
-  ReactDOM.render(
-    <div class="center">
-    <h1>Boo yaa</h1>
-    </div>,
-
-    document.getElementById('app')
-  );
+  let reactApp = document.getElementById('app');
+  if (reactApp) {
+    reactAppRender(reactApp);
+  }
 });
