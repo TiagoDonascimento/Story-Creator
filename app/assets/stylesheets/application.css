@@ -13,3 +13,84 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    background-color: DarkSalmon;
+}
+
+ #horizontal-scroll {
+ width: 300px;
+ height: 500px;
+
+
+
+ background: url(https://www.specialtytheatre.com/wp-content/uploads/2011/12/Pleating_and_Fullness_for_Stage_Curtains.jpg);
+ -webkit-animation: backgroundScroll 20s linear infinite;
+ animation: backgroundScroll 20s linear infinite;
+ }
+
+ @-webkit-keyframes backgroundScroll {
+ from {background-position: 0 0;}
+ to {background-position: -400px 0;}
+ }
+
+ @keyframes backgroundScroll {
+ from {background-position: 0 0;}
+ to {background-position: -400px 0;}
+ }
+
+ .center {
+   margin: -70px 0 0 -120px;
+   position: absolute;
+   top: 30%;
+   left: 35%;
+ }
+
+ .formposition {
+   margin: -70px 0 0 -120px;
+   position: absolute;
+   top: 50%;
+   left: 35%;
+ }
+
+.logo {
+  width: 80%;
+}
+
+.logoset {
+  position: relative;
+     top: 20%;
+     left: 10%;
+}
+
+.georgiafont {
+    font: italic bold 12px/30px Georgia, serif;
+    font-size: 120%;
+}
+
+#user_email  {
+
+    width: 50%;
+}
+
+.loginposition {
+  margin: -70px 0 0 -120px;
+  position: absolute;
+  top: 100%;
+  left: 20%;
+}
+
+.logocenter {
+  margin: -4px 0 0 -120px;
+  position: absolute;
+  top: 10%;
+  left: 37%;
+}
+
+body {
+    color: white;
+}
+
+a {
+    color: white;
+}
