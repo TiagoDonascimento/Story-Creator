@@ -1,0 +1,13 @@
+class Scenario < ActiveRecord::Migration[5.0]
+    def change
+      create_table :scenarios do |t|
+      t.text    :problem, null: false
+      t.text    :decision, null: false
+      t.text    :effect, null: false
+      t.boolean :polarity,null: false
+
+      t.timestamps null: false
+
+    end
+  end
+end
