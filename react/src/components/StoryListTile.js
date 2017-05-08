@@ -3,14 +3,20 @@ import { Link } from 'react-router';
 
 const StoryListTile = (props) => {
   return(
-    <div className="list-item text-center medium-4 small-12 columns">
-      <p><img src={props.cover}/></p>
 
-      <p>{props.setting}</p>
-      <div>
 
-      </div>
-    </div>
+    <ul className="flex-container">
+
+
+
+
+        <p><img className="potato" src={props.cover}/>{props.protaginst}{props.story_name}</p>
+
+
+
+
+
+    </ul>
 
   )
 }

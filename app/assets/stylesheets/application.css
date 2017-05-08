@@ -46,8 +46,31 @@
    left: 35%;
  }
 
+ .nextBox {
+      left: 35px;
+
+ }
+
+ .centerform {
+   margin: -90px 0 0 500px;
+
+
+
+ }
+
+
+ .centerblock {
+   margin: 200px 0 0 -200px;
+
+   top: -500%;
+
+    z-index: 1;
+ }
+
+
+
  .formposition {
-   margin: -70px 0 0 -120px;
+   margin: -70px 0 0 -500px;
    position: absolute;
    top: 50%;
    left: 35%;
@@ -93,4 +116,12 @@ body {
 
 a {
     color: white;
+}
+
+.bignice {
+    font-size: 20px;
+}
+
+input[type='text'] {
+  font-size: 40px;
 }

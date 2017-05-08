@@ -15,11 +15,24 @@ let reactAppRender = (element) => {
   );
 };
 
+let block = (element) => {
+  ReactDOM.render(
+    <Block />,
+    element
+  );
+};
 
 
 $(function() {
   let reactApp = document.getElementById('app');
   if (reactApp) {
     reactAppRender(reactApp);
+  }
+});
+
+$(function() {
+  let Block = document.getElementById('Block');
+  if (Block) {
+    reactAppRender(Block);
   }
 });

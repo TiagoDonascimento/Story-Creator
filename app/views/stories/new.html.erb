@@ -1,28 +1,60 @@
 
 
+
+<div class="animated flip">
+<div id="ball"></div>
+
+
 <div class="row form">
   <div class="small-6 small-centered columns">
+    <div id="Block">
+
+    </div>
 
     <%= form_for (@story) do |f| %>
-      <%= f.label :story_name, "Name of your story" %>
-      <%= f.text_field :story_name %>
 
-      <%= f.label :protaginst, "Name of your protaganist" %>
+
+      <div class="centerform">
+      <div class="bignice">
+
+
+
+
+      <%= f.label :protaginst, "Name of your main character" %>
+            <br>
+              <br>
       <%= f.text_field :protaginst %>
-
-      <%= f.label :cover, "A cover for your story?" %>
+            <br>
+              <br>
+      <%= f.label :cover, "What does your character look like? Url:" %>
+            <br>
+              <br>
       <%= f.text_field :cover %>
-
-      <%= f.label :setting, "Where does your story take place?" %>
+            <br>
+              <br>
+      <%= f.label :setting, "What is your characters setting?" %>
+            <br>
+              <br>
       <%= f.text_field :setting %>
-
-      <%= f.label :goal, "What is your characters goal? what do they want?" %>
+            <br>
+              <br>
+      <%= f.label :goal, "What does your character want?" %>
+            <br>
+              <br>
       <%= f.text_field :goal %>
+            <br>
+              <br>
+      <%= f.label :story_name, "What is the name of your story?" %>
+            <br>
+              <br>
+      <%= f.text_field :story_name %>
+      <div id="main-list">
+        <br>
+          <br>
+
+
 
       <%= f.submit "Create character", class: "button round" %>
-    <% end %>
-  </div>
-</div>
-
-<div id="main-list">
-</div>
+      <% end %>
+    </div>
+ </div>
