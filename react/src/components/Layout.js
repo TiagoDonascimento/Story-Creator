@@ -20,16 +20,13 @@ class Layout extends React.Component {
             <li><Link to="/newstory">NewStory</Link></li>
             <li><Link to="/StoryListContainer">Characters</Link></li>
               <li><a href="/this">New Character</a></li>
-    
-
 
 
           </ul>
-
+          <div className= "scroll">
             {this.props.children}
-
-
         </div>
+          </div>
     )
   }
 }

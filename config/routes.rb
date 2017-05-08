@@ -8,8 +8,8 @@
         root to: 'stories#index', as: :authenticated_root
         resources :categories, only: [:index]
     end
+  end 
 
-    resources :stories, only: [:index, :create, :show, :new]
 
     namespace :api do
       namespace :v1 do
@@ -17,10 +17,9 @@
       end
     end
 
-    resources :stories, only: [:new]
+    resources :stories, only: [:index, :create, :show, :new]
 
     unauthenticated do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
   end
-end

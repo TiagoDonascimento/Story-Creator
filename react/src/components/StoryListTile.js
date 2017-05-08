@@ -4,19 +4,9 @@ import { Link } from 'react-router';
 const StoryListTile = (props) => {
   return(
 
-
-    <ul className="flex-container">
-
-
-
-
-        <p><img className="potato" src={props.cover}/>{props.protaginst}{props.story_name}</p>
-
-
-
-
-
-    </ul>
+          <div>
+          <a href={`/stories/${props.id}`}><img src={props.cover}/></a>
+          </div>
 
   )
 }

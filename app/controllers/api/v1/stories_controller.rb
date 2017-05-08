@@ -15,7 +15,7 @@ class Api::V1::StoriesController < ApplicationController
 
   def show
     story = Story.find(params[:id])
-    render json: story, serializer: CompleteStorySerializer
+    render json: story #, serializer: CompleteStorySerializer
   end
 
   private

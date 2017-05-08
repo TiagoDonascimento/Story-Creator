@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import StoryListTile from '../components/StoryListTile';
+import Story from '../components/Story';
 
-class StoryListContainer extends Component {
+class StoryContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      stories: []
+      story: ''
     }
     this.getData = this.getData.bind(this);
   }
 
+
   getData() {
-    fetch('/api/v1/stories')
+    let storyId = this.props.params.id;
+    fetch(`/api/v1/stories/${storyId}`)
       .then(response => {
         if (response.ok) {
           return response;
@@ -23,8 +25,7 @@ class StoryListContainer extends Component {
       })
       .then(response => response.json())
       .then(body => {
-
-        this.setState({stories: body});
+        this.setState({ story: body });
       })
       .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
@@ -34,30 +35,24 @@ class StoryListContainer extends Component {
   }
 
   render() {
-
-
-    let newStories = this.state.stories.map((story) => {
-      return (
-        <StoryListTile
-          id={story.id}
-          key={story.id}
-          story_name={story.story_name}
-          protaginst={story.protaginst}
-          cover={story.cover}
-          setting={story.setting}
-          goal={story.goal}
-        />
-      )
-    });
+    debugger;
     return(
 
       <div>
-        <section id="photos">
-          {newStories}
-        </section>
+
+      <Story
+        id={this.state.story.id}
+        key={this.state.story.id}
+        story_name={this.state.story.story_name}
+        protaginst={this.state.story.protaginst}
+        cover={this.state.story.cover}
+        setting={this.state.story.setting}
+        goal={this.state.story.goal}
+      />
+
       </div>
     )
   }
 }
 
-export default StoryListContainer;
+export default StoryContainer;
