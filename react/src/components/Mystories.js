@@ -1,8 +1,17 @@
-import React from 'react'
+
+
+import React from 'react';
 import { Link } from 'react-router';
 
-export default React.createClass({
-  render() {
-    return <div>My Stories</div>
-  }
-})
+const MyStories = (props) => {
+  return(
+    <div>
+      <p>{props.setting}</p>
+      <div>
+
+      </div>
+    </div>
+  )
+}
+
+export default MyStories;

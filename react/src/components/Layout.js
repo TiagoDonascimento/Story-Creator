@@ -11,18 +11,23 @@ class Layout extends React.Component {
 
   render() {
     return(
-      <div>
+      <div className="animated rotateInDownLeft">
           <h1>Welcome </h1>
           <ul role="nav">
               <li><Link to='/'>HOME</Link></li>
-            <li><Link to="/profile">Profile</Link></li>
+
             <li><Link to="/mystories">MyStories</Link></li>
             <li><Link to="/newstory">NewStory</Link></li>
+            <li><Link to="/StoryListContainer">Characters</Link></li>
+              <li><a href="/this">New Character</a></li>
+    
+
+
 
           </ul>
-          <PageTransition>
-  {this.props.children}
-</PageTransition>
+
+            {this.props.children}
+
 
         </div>
     )

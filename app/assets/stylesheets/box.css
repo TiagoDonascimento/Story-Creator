@@ -1,0 +1,50 @@
+
+#ball{
+  position:absolute;
+  left:450px;
+  top:300px;
+  width: 500px;
+  height:500px;
+  background-image: url("https://www.specialtytheatre.com/wp-content/uploads/2011/12/Pleating_and_Fullness_for_Stage_Curtains.jpg");
+
+}
+
+.btn{
+  background-color: #4CAF50;
+   color: white;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 50px;
+   z-index: -1;
+  margin: 200px 0 0 950px;
+}
+
+.potato{
+  max-width: 400px;
+  max-height: 400px;
+
+}
+
+@import "compass/css3";
+
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 100px;
+   height: 100px;
+   margin: 10px;
+}
