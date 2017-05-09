@@ -9,6 +9,20 @@
 
 }
 
+
+#balltwo{
+  position:absolute;
+  left:450px;
+  top:300px;
+  width: 500px;
+  height:500px;
+  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-04/25/10/campaign_images/webdr12/and-it-was-all-yellow-2-17914-1461594354-7_big.jpg");
+
+}
+
+
+
+
 .btn{
   background-color: #4CAF50;
    color: white;
@@ -70,10 +84,7 @@
   }
 }
 
-body {
-  margin: 0;
-  padding: 0;
-}
+
 
 .scroll{
   overflow-y: scroll;

@@ -7,6 +7,7 @@ class Stories < ActiveRecord::Migration[5.0]
         t.text   :cover,      null: false
         t.text   :setting, null: false
         t.text   :goal, null: false
+        t.belongs_to :user, null: false
 
         t.timestamps null: false
     end

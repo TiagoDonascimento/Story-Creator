@@ -9,8 +9,6 @@ import StoryListContainer from  './containers/StoryListContainer';
 import StoryContainer from './containers/StoryContainer';
 
 
-
-
 class Root extends React.Component {
   constructor(props){
     super(props)
@@ -21,16 +19,14 @@ class Root extends React.Component {
   render() {
     return(
       <Router history={browserHistory}>
+        <Route path="/this" component={Block}/>
         <Route path='/' component={Layout}>
           <IndexRoute component={MyStories} />
-          <Route path="/this" component={Block}/>
-
           <Route path="/MyStories" component={MyStories}/>
           <Route path="/profile" component={Profile}/>
           <Route path="/NewStory" component={NewStory}/>
           <Route path="/StoryListContainer" component={StoryListContainer}/>
           <Route path="/stories/:id" component={StoryContainer} />
-
         </Route>
       </Router>
     )

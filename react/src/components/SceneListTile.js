@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-const StoryListTile = (props) => {
+const SceneListTile = (props) => {
   return(
 
           <div className="animated flipInY">
-          <a href={`/stories/${props.id}`}><img src={props.cover}/></a>
+          <h1> Hey! </h1>
           </div>
 
   )
 }
 
-export default StoryListTile;
+export default SceneListTile;

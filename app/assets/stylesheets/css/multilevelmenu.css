@@ -29,7 +29,7 @@
 	width: 100%;
 	margin: 0;
 	border: none;
-	overflow: hidden;
+	overflow: scroll;
 	position: relative;
 	cursor: pointer;
 	outline: none;
@@ -143,10 +143,10 @@
 	display: none;
 }
 
-/* 
+/*
 When a submenu is openend, we will hide all li siblings.
 For that we give a class to the parent menu called "dl-subview".
-We also hide the submenu link. 
+We also hide the submenu link.
 The opened submenu will get the class "dl-subviewopen".
 All this is done for any sub-level being entered.
 */
@@ -952,4 +952,3 @@ All this is done for any sub-level being entered.
 .no-js .dl-menuwrapper li > a:not(:only-child):after {
 	content: '';
 }
-

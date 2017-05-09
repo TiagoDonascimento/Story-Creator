@@ -58,6 +58,13 @@
 
  }
 
+ .centerformy {
+   margin: 100px 0 0 500px;
+
+
+
+ }
+
 
  .centerblock {
    margin: 200px 0 0 -200px;
@@ -110,9 +117,7 @@
   left: 37%;
 }
 
-body {
-    color: white;
-}
+
 
 a {
     color: white;
@@ -124,4 +129,9 @@ a {
 
 input[type='text'] {
   font-size: 40px;
+}
+
+.holder{
+    max-width: 300px;
+    max-height: 300px;
 }

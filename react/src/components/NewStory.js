@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Link } from 'react-router';
 
@@ -9,3 +8,5 @@ const NewStory = props => {
     </div>
   )
 }
+
+export default NewStory;

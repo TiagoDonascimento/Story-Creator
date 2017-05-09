@@ -14,12 +14,12 @@ class Layout extends React.Component {
       <div className="animated rotateInDownLeft">
           <h1>Welcome </h1>
           <ul role="nav">
-              <li><Link to='/'>HOME</Link></li>
+            <li><Link to='/'>HOME</Link></li>
 
-            <li><Link to="/mystories">MyStories</Link></li>
-            <li><Link to="/newstory">NewStory</Link></li>
-            <li><Link to="/StoryListContainer">Characters</Link></li>
-              <li><a href="/this">New Character</a></li>
+
+
+            <li><Link to="/StoryListContainer">My Stories</Link></li>
+              <li><a href="/this">New Story</a></li>
 
 
           </ul>

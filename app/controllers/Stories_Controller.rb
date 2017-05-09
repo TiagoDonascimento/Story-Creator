@@ -2,7 +2,10 @@ class StoriesController < ApplicationController
   protect_from_forgery with: :exception
 
   def create
+    binding.pry
     @story = Story.new(story_params)
+    @user = current_user
+    @story.user = @user
 
     if @story.save!
       flash[:notice] = "Story successfully added!"
