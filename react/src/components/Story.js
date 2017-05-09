@@ -27,7 +27,6 @@ const Story = props => {
 
 
       </div>
-      <img className="holder" src={props.cover}/>
   )
 }
 export default Story;
