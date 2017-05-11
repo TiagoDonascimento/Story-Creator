@@ -2,6 +2,7 @@ class ScenesController < ApplicationController
   protect_from_forgery with: :exception
 
   def create
+
     @scene = Scene.new(scene_params)
     @story = Story.find(params[:story_id])
     @scene.story = @story

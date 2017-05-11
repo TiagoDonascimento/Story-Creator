@@ -1,24 +1,11 @@
 
-#ball{
-  position:absolute;
+.ball{
   left:450px;
-  top:300px;
   width: 500px;
-  height:500px;
-  background-image: url("https://www.specialtytheatre.com/wp-content/uploads/2011/12/Pleating_and_Fullness_for_Stage_Curtains.jpg");
-
+  height:100px;
 }
 
 
-#balltwo{
-  position:absolute;
-  left:450px;
-  top:300px;
-  width: 500px;
-  height:500px;
-  background-image: url("https://img.buzzfeed.com/buzzfeed-static/static/2016-04/25/10/campaign_images/webdr12/and-it-was-all-yellow-2-17914-1461594354-7_big.jpg");
-
-}
 
 
 
@@ -39,7 +26,7 @@
 
 #photos {
    /* Prevent vertical gaps */
-   line-height: 0;
+   line-height: ;
 
    -webkit-column-count: 5;
    -webkit-column-gap:   0px;
@@ -52,7 +39,7 @@
 #photos img {
   /* Just in case there are inline attributes */
   width: 100% !important;
-  height: auto !important;
+  height: 500% !important;
 }
 
 @media (max-width: 1200px) {
@@ -88,4 +75,45 @@
 
 .scroll{
   overflow-y: scroll;
+}
+
+.size{
+  width: 350px;
+
+}
+
+.example {
+  -webkit-columns: 4 150px;
+  -moz-columns: 4 150px;
+  columns: 4 150px;
+  -webkit-column-gap: 2em;
+  -moz-column-gap: 2em;
+  column-gap: 2em;
+}
+
+.c--anim-btn span {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.c--anim-btn, .c-anim-btn {
+  transition: 0.3s;
+}
+
+.c--anim-btn {
+  height: 64px;
+  font: normal normal 700 1em/4em Arial,sans-serif;
+  overflow: hidden;
+  width: 100px;
+  background-color: #3b5998;
+}
+
+.c-anim-btn{
+  margin-top: 0em;
+}
+
+.c--anim-btn:hover .c-anim-btn{
+  margin-top: -4em;
 }

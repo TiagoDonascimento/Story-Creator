@@ -9,6 +9,9 @@ const Story = props => {
 
   return(
 
+
+
+          <div className="titlebox">
     <div className="animated rotateInDownLeft">
 
 <img className="holder" src={props.cover}/>
@@ -21,9 +24,15 @@ const Story = props => {
 <h1> Setting: </h1>{props.setting}
 
 <h1> Goal: </h1>{props.goal}
+<br/>
+<br/>
+
+<h1><a href={"/stories/"+ props.id + "/scenes/new"}>New scene</a></h1>
+  </div>
 
 
-  <li><a href={"/stories/"+ props.id + "/scenes/new"}>Add a scene</a></li>
+
+
 
 
       </div>

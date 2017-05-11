@@ -11,11 +11,12 @@ const Scene = props => {
 
     <div className="animated rotateInDownLeft">
 
-<img className="holder" src={props.problem}/>
-
-
+ <h1> Hello! </h1>
 
       </div>
+
+
+
   )
 }
 export default Scene;

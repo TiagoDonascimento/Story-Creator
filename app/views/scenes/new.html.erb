@@ -1,11 +1,11 @@
 
-
+<%= link_to "Home", authenticated_root_path %>
 <div class="animated flip">
 <div></div>
 
 
 <div class="row form">
-  <div class="small-6 small-centered columns">
+  <div>
     <div>
 
     </div>
@@ -23,7 +23,7 @@
       <br>
         <br>
 
-      <%= f.label :scene_cover, "does this scene have a cover?" %>
+      <%= f.label :scene_cover, "Give a cover image for this scene. URL:" %>
             <br>
               <br>
       <%= f.text_field :scene_cover %>
@@ -32,33 +32,36 @@
       <%= f.label :problem, "What is seperating your character from the goal they have?" %>
             <br>
               <br>
-      <%= f.text_field :problem %>
+      <%= f.text_area :problem, size: "46x20" %>
             <br>
               <br>
-      <%= f.label :decision, "What decision and action does your character make and take to get closer to the goal?" %>
+      <%= f.label :decision, "What action does your character take to get closer to the goal?" %>
             <br>
               <br>
-      <%= f.text_field :decision %>
+        <%= f.text_area :decision, size: "46x12" %>
             <br>
               <br>
-      <%= f.label :polarity, "Does your characters position bring them closer or farther from obtaining the goal?" %>
+      <%= f.label :polarity, "Does your characters decision bring them closer or farther from obtaining the goal?" %>
             <br>
               <br>
-      <%= f.radio_button :polarity, 'True' %>
-      <%= f.radio_button :polarity, 'False' %>
+      <%= f.radio_button :polarity, true %>
+          <label>Closer</label>
+                <br>
+      <%= f.radio_button :polarity, false %>
+          <label>Farther</label>
             <br>
               <br>
-      <%= f.label :effect, "Based on previous question, explain where this leaves your character in relation to their goal." %>
+      <%= f.label :effect, "What effect does this action have? Explain how it brings them either closer or farther to their goal?" %>
             <br>
               <br>
-      <%= f.text_field :effect %>
+      <%= f.text_area :effect, size: "46x5" %>
       <div id="main-list">
         <br>
           <br>
 
 
 
-      <%= f.submit "Create character", class: "button round" %>
+      <%= f.submit "Create Scene", class: "button round" %>
       <% end %>
     </div>
  </div>
