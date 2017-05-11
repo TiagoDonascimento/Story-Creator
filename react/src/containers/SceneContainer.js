@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Scene from '../components/Scene';
+import SceneListContainer from './SceneListContainer';
 
 class SceneContainer extends Component {
   constructor(props) {
@@ -40,7 +41,7 @@ class SceneContainer extends Component {
 
       <div>
 
-      <Story
+      <Scene
         id={this.state.scene.id}
         key={this.state.scene.id}
         scene_name={this.state.scene.scene_name}
@@ -49,6 +50,9 @@ class SceneContainer extends Component {
         polarity={this.state.scene.polarity}
         effect={this.state.scene.effect}
       />
+
+      {this.props.children}
+
 
       </div>
     )

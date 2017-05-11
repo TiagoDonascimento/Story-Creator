@@ -11,20 +11,43 @@ class Layout extends React.Component {
 
   render() {
     return(
+
       <div className="animated rotateInDownLeft">
+
           <h1>Welcome </h1>
+                <div>
           <ul role="nav">
-            <li><Link to='/'>HOME</Link></li>
+
+            <Link to="/StoryListContainer">
+              <div className="c--anim-btn">
+                <span className="c-anim-btn">My Stories</span>
+                  <span>
+                    View All!
+                      </span>
+                        </div></Link>
+                        <br/>
+                        <div className="boxfloat">
+
+                        <a href="/this">
+                          <div className="c--anim-btn">
+                            <span className="c-anim-btn">New Story</span>
+                              <span>
+                                Create
+                                  </span>
+                                    </div>
+                                    </a>
+                                    </div>
 
 
-
-            <li><Link to="/StoryListContainer">My Stories</Link></li>
-              <li><a href="/this">New Story</a></li>
 
 
           </ul>
+            </div>
+
+
           <div className= "scroll">
             {this.props.children}
+
         </div>
           </div>
     )

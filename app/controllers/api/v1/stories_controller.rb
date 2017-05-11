@@ -9,13 +9,17 @@ class Api::V1::StoriesController < ApplicationController
     story = Story.find(params[:id])
     story.points += 1
     if story.save!
-      render json: story, serializer: CompleteStorySerializer
+      render json: story
     end
   end
 
   def show
     story = Story.find(params[:id])
-    render json: story #, serializer: CompleteStorySerializer
+    scenes = story.scenes
+    render json: {
+      story: story,
+      scenes: scenes
+    }
   end
 
   private

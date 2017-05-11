@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 import Story from '../components/Story';
+import SceneListContainer from '../containers/SceneListContainer';
+import SceneStoriesList from '../containers/SceneStoriesList'
 
 class StoryContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      story: ''
+      story: '',
+      scenes: []
     }
     this.getData = this.getData.bind(this);
   }
@@ -25,7 +28,7 @@ class StoryContainer extends Component {
       })
       .then(response => response.json())
       .then(body => {
-        this.setState({ story: body });
+        this.setState({ story: body.story, scenes: body.scenes });
       })
       .catch(error => console.error(`Error in fetch: ${error.message}`));
   }
@@ -49,7 +52,11 @@ class StoryContainer extends Component {
         setting={this.state.story.setting}
         goal={this.state.story.goal}
       />
-
+      <div className="centertext">
+      <SceneStoriesList
+        scenes={this.state.scenes}
+      />
+      </div>
       </div>
     )
   }

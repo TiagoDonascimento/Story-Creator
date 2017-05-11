@@ -61,6 +61,7 @@ body {
 body {
   -webkit-animation: background 45s cubic-bezier(1,0,0,1) infinite;
   animation: background 15s cubic-bezier(1,0,0,1) infinite;
+  
 }
 
 
@@ -98,4 +99,5 @@ body {
   -o-animation:move-twink-back 200s linear infinite;
   -webkit-animation:move-twink-back 200s linear infinite;
   animation:move-twink-back 200s linear infinite;
+
 }

@@ -34,3 +34,31 @@ cover:"https://vignette3.wikia.nocookie.net/the-dashiexp/images/f/f6/MarioHand.p
 setting:"Mushroom kingdom",
 goal:"save the princess",
 user: user)
+
+Story.create(story_name:"Pooh bear eats the shoe",
+protaginst:"Pooh Bear",
+cover:"https://advancedgraphics.com/wp-content/uploads/2013/08/642%20Winnie%20the%20Pooh.jpg",
+setting:"hundred acre wood",
+goal:"wants to find some honey",
+user: user)
+
+Story.create(story_name:"Ristar",
+protaginst:"Ristar",
+cover:"http://img06.deviantart.net/3f4a/i/2015/126/9/a/ristar_the_shooting_star_by_drawloverlala-d8s9ebr.png",
+setting:"space",
+goal:"To save his dad",
+user: user)
+
+Story.create(story_name:"rocket knight adventures",
+protaginst:"sparkster",
+cover:"http://vignette2.wikia.nocookie.net/rocketknight/images/6/6e/Sparkster_%28Rocket_Knight_Adventures_Japan_Artwork%29.png/revision/latest?cb=20150815030037",
+setting:"zebulan",
+goal:"To save the princess",
+user: user)
+
+Story.create(story_name:"Invader Zim",
+protaginst:"Zim",
+cover:"http://www.toonzone.net/wp-content/uploads/2017/04/invader_zim_render_by_neonstartapeinvasion-d9m3yz6-1024x751.png",
+setting:"Space",
+goal:"take over the earth",
+user: user)

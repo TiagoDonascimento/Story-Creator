@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SceneListContainer from '../components/SceneListContainer';
+import SceneListTile from '../components/SceneListTile';
 
-class StoryListContainer extends Component {
+class SceneListContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -37,24 +37,29 @@ class StoryListContainer extends Component {
 
 
     let newScenes = this.state.scenes.map((scene) => {
+
       return (
+
         <SceneListTile
           id={scene.id}
           key={scene.id}
-          story_name={scene.scene_name}
-          protaginst={scene.problem}
-          cover={scene.decision}
-          setting={scene.polarity}
-          goal={scene.effect}
+          scene_name={scene.scene_name}
+          scene_cover={scene.scene_cover}
+          problem={scene.problem}
+          decision={scene.decision}
+          polarity={scene.polarity}
+          effect={scene.effect}
+
         />
+
       )
     });
     return(
 
       <div>
-        <section id="photos">
+
           {newScenes}
-        </section>
+
       </div>
     )
   }

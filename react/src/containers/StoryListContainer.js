@@ -53,6 +53,7 @@ class StoryListContainer extends Component {
 
       <div>
         <section id="photos">
+        
           {newStories}
         </section>
       </div>

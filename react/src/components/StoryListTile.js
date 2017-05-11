@@ -4,10 +4,15 @@ import { Link } from 'react-router';
 const StoryListTile = (props) => {
   return(
 
-          <div className="animated flipInY">
-          <a href={`/stories/${props.id}`}><img src={props.cover}/></a>
-          </div>
+            <div>
 
+                <div className="animated flipInY">
+
+                    <a href={`/stories/${props.id}`}><img src={props.cover}/></a>
+
+      
+                </div>
+              </div>
   )
 }
 
