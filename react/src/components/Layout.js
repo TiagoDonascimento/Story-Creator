@@ -14,11 +14,11 @@ class Layout extends React.Component {
 
       <div className="animated rotateInDownLeft">
 
-          <h1>Welcome </h1>
+        <br/>
                 <div>
           <ul role="nav">
 
-            <Link to="/StoryListContainer">
+            <Link to="/storylistcontainer">
               <div className="c--anim-btn">
                 <span className="c-anim-btn">My Stories</span>
                   <span>
@@ -37,16 +37,17 @@ class Layout extends React.Component {
                                     </div>
                                     </a>
                                     </div>
+                                  </ul>
+                                </div>
+                               <div className= "scroll">
+                               <br/>
+                              {this.props.children}
 
 
 
 
-          </ul>
-            </div>
 
 
-          <div className= "scroll">
-            {this.props.children}
 
         </div>
           </div>

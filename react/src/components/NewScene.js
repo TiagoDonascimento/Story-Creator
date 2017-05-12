@@ -5,7 +5,7 @@ const NewScene = (props) => {
   return(
     <div>
 
-<h1> HEY </h1>
+<h1> Created! </h1>
     </div>
   )
 }

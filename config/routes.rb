@@ -12,6 +12,8 @@
     end
   end
 
+  resources :storylistcontainers, only: [:index, :update, :show]
+
 
     namespace :api do
       namespace :v1 do
@@ -27,4 +29,5 @@
     unauthenticated do
       root 'devise/sessions#new', as: :unauthenticated_root
     end
+    get '*path' , to: 'stories#index'
   end

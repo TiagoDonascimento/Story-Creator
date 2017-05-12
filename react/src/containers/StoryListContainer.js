@@ -11,7 +11,10 @@ class StoryListContainer extends Component {
   }
 
   getData() {
-    fetch('/api/v1/stories')
+    fetch('/api/v1/stories', {
+      method: "GET",
+      credentials: "include"
+    })
       .then(response => {
         if (response.ok) {
           return response;
@@ -53,7 +56,7 @@ class StoryListContainer extends Component {
 
       <div>
         <section id="photos">
-        
+
           {newStories}
         </section>
       </div>

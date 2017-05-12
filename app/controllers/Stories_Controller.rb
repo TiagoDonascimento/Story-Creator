@@ -22,7 +22,7 @@ class StoriesController < ApplicationController
 
   def index
     @story = Story.new
-    @stories = Story.all
+    @stories = Story.where(user: current_user)
   end
 
   def show
