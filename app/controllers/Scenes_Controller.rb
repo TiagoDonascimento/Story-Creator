@@ -8,7 +8,7 @@ class ScenesController < ApplicationController
     @scene.story = @story
     if @scene.save!
       flash[:notice] = "Scene successfully added!"
-      redirect_to story_scene_path(@story, @scene)
+      redirect_to story_path(@story)
     else
       flash[:error] = @scene.errors.full_messages.join('. ')
       render :new

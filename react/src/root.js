@@ -25,12 +25,12 @@ class Root extends React.Component {
         <Route path="/this" component={Block}/>
          <Route path='/' component={Layout}>
           <IndexRoute component={MyStories} />
-          <Route path="/MyStories" component={MyStories}/>
-          <Route path="/profile" component={Profile}/>
-          <Route path="/NewStory" component={NewStory}/>
-          <Route path="/StoryListContainer" component={StoryListContainer}/>
-          <Route path="/stories/:id" component={StoryContainer} />
-          <Route path="/scenes/:id" component={SceneContainer} />
+                      <Route path="/MyStories" component={MyStories}/>
+                    <Route path="/profile" component={Profile}/>
+                  <Route path="/NewStory" component={NewStory}/>
+                <Route path="/storylistcontainer" component={StoryListContainer}/>
+              <Route path="/stories/:id" component={StoryContainer} />
+            <Route path="/scenes/:id" component={SceneContainer} />
           <Route path="stories/:id/scenes/:id" component={SceneContainer} />
          </Route>
       </Router>

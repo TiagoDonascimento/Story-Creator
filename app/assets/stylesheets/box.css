@@ -94,8 +94,9 @@
 .c--anim-btn span {
   color: white;
   text-decoration: none;
-  text-align: center;
+  text-align: middle;
   display: block;
+    margin-left: 0.4em;
 }
 
 .c--anim-btn, .c-anim-btn {
@@ -103,17 +104,20 @@
 }
 
 .c--anim-btn {
-  height: 64px;
+  height: 35px;
   font: normal normal 700 1em/4em Arial,sans-serif;
   overflow: hidden;
   width: 100px;
   background-color: #3b5998;
+
 }
 
 .c-anim-btn{
-  margin-top: 0em;
+  margin-top: -1em;
+  margin-left: 0.4em;
 }
 
 .c--anim-btn:hover .c-anim-btn{
-  margin-top: -4em;
+  margin-top: -5em;
+
 }

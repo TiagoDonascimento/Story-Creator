@@ -1,7 +1,7 @@
 class Api::V1::StoriesController < ApplicationController
   skip_before_action :verify_authenticity_token
   def index
-    stories = Story.all
+    stories = Story.where(user: current_user)
     render json: stories #, each_serializer: SimpleStorySerializer
   end
 
