@@ -11,7 +11,7 @@ const Scene = props => {
 
     <div className="animated rotateInDownLeft">
 
- <h1> Created! </h1>
+ <h1> Your story was created! </h1>
 
       </div>
 
