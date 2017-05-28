@@ -19,9 +19,9 @@ const SceneListTile = (props) => {
 
 
 
-
+        <div>
         <div className="flex-container">
-        
+
       <div className="flex-item"><p><h3>Scene</h3>{props.scene_name}</p></div>
       <div className="flex-item"><p><h3>Problem:</h3>{props.problem}</p></div>
       <div className="flex-item"><p><h3>Decision</h3>{props.decision}</p></div>
@@ -29,6 +29,7 @@ const SceneListTile = (props) => {
       <div className="flex-item"><p><h3>Problem:</h3>{props.problem}</p></div>
 
 
+    </div>
     </div>
       </div>
   )
