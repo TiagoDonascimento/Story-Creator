@@ -3,12 +3,6 @@ import { Link } from 'react-router';
 
 const SceneListTile = (props) => {
 
-  let polar = ""
-  if (props.polarity === true) {
-    polar = "closer"
-  }else  {
-    polar = "farther"
-  }
 
 
   return(
